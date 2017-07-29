@@ -1,0 +1,145 @@
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-android-extensions"
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion build_tools_version
+
+    signingConfigs {
+        debug {
+            storeFile file('../keys/debug.keystore')
+            storePassword 'android'
+            keyAlias 'AndroidDebugKey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile file('../keys/keystore.jks')
+            storePassword '123456789'
+            keyAlias 'AndroidReleaseKey'
+            keyPassword '123456789'
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".test"
+            manifestPlaceholders = [
+                    manifestApplicationId          : "${defaultConfig.applicationId}.test",
+                    onesignal_app_id               : "your_onesignal_app_id",
+                    onesignal_google_project_number: "your_onesignal_google_project_number"
+            ]
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            manifestPlaceholders = [
+                    manifestApplicationId          : "${defaultConfig.applicationId}",
+                    onesignal_app_id               : "your_onesignal_app_id",
+                    onesignal_google_project_number: "your_onesignal_google_project_number"
+            ]
+        }
+    }
+
+    defaultConfig {
+        applicationId "io.nucleos.baseapp"
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    packagingOptions {
+        exclude "META-INF/ASL2.0"
+        exclude "META-INF/LICENSE"
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+    }
+}
+
+// Enable Annotation Processing for Kotlin, required for Dagger
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+
+    // ---------- Android support ----------
+    compile "com.android.support:appcompat-v7:$android_support_version"
+    compile "com.android.support:support-v4:$android_support_version"
+    compile "com.android.support:design:$android_support_version"
+    compile "com.android.support:recyclerview-v7:$android_support_version"
+    compile "com.android.support:cardview-v7:$android_support_version"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // ---------- Google play services ----------
+    compile "com.google.android.gms:play-services-gcm:$play_services_version"
+    compile "com.google.android.gms:play-services-location:$play_services_version"
+    compile "com.google.android.gms:play-services-maps:$play_services_version"
+    compile "com.google.android.gms:play-services-auth:$play_services_version"
+    compile "com.google.android.gms:play-services-analytics:$play_services_version"
+
+    // ---------- Kotlin ----------
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // ---------- Dagger ----------
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    compile "com.google.dagger:dagger:$dagger_version"
+
+    // ---------- OkHttp ----------
+    compile "com.squareup.okhttp3:okhttp:$okhttp_version"
+    compile "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // ---------- Retrofit ----------
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+
+    // ---------- Rx ----------
+    compile "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    compile "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    compile "com.jakewharton.rxbinding2:rxbinding-kotlin:$rxbinding_version"
+    compile "com.tbruyelle.rxpermissions2:rxpermissions:$rxpermissions_version"
+
+    // ---------- Font ----------
+    compile "uk.co.chrisjenx:calligraphy:$calligraphy_version"
+
+    // ---------- For Images ----------
+    compile "com.squareup.picasso:picasso:$picasso_version"
+
+    // ---------- OpenTok ----------
+    compile "com.opentok.android:opentok-accelerator-core:1.0.10"
+
+    // ---------- OneSignal ----------
+    compile "com.onesignal:OneSignal:$onesignal_version"
+
+    // ---------- Joda-time ----------
+    compile "joda-time:joda-time:$joda_time_version"
+
+    // ---------- Aws ----------
+    compile "com.amazonaws:aws-android-sdk-core:$aws_sdk_version"
+    compile "com.amazonaws:aws-android-sdk-s3:$aws_sdk_version"
+    compile "com.amazonaws:aws-android-sdk-ddb:$aws_sdk_version"
+
+    // ---------- Fabric ----------
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+    // ---------- Test ----------
+    androidTestCompile("com.android.support.test.espresso:espresso-core:2.2.2", {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

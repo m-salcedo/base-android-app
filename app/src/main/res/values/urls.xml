@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_production">https://api-baseapp.herokuapp.com</string>
+    <string name="api_staging">https://api-baseapp.herokuapp.com</string>
+    <string name="api_mechas">http://c8e9dbfc.ngrok.io</string>
+    <string name="api_carlos">http://192.168.3.140:1337</string>
+    <string name="api_andres">http://192.168.10.112:8443</string>
+</resources>

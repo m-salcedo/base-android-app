@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Menu Sizes -->
+    <dimen name="menu.hg">300dp</dimen>
+
+
+    <!-- Text Sizes -->
+    <dimen name="text.xxxs">6sp</dimen>
+    <dimen name="text.xxs">8sp</dimen>
+    <dimen name="text.xs">10sp</dimen>
+    <dimen name="text.xsm">12sp</dimen>
+    <dimen name="text.default">13sp</dimen>
+    <dimen name="text.sm">14sp</dimen>
+    <dimen name="text.lg">16sp</dimen>
+    <dimen name="text.xlg">18sp</dimen>
+    <dimen name="text.xxlg">20sp</dimen>
+    <dimen name="text.xxxlg">24sp</dimen>
+    <dimen name="text.xxxxlg">28sp</dimen>
+    <dimen name="text.xxxxxlg">51sp</dimen>
+
+    <!-- Spacing Sizes -->
+    <dimen name="spacing.xxxs">2dp</dimen>
+    <dimen name="spacing.xxs">4dp</dimen>
+    <dimen name="spacing.xs">8dp</dimen>
+    <dimen name="spacing.xsm">10dp</dimen>
+    <dimen name="spacing.sm">16dp</dimen>
+    <dimen name="spacing.xmd">20dp</dimen>
+    <dimen name="spacing.md">24dp</dimen>
+    <dimen name="spacing.lg">32dp</dimen>
+    <dimen name="spacing.xlg">48dp</dimen>
+    <dimen name="spacing.xxlg">56dp</dimen>
+    <dimen name="spacing.xxxlg">70dp</dimen>
+
+    <!-- General Sizes -->
+    <dimen name="view_padding">@dimen/spacing.md</dimen>
+
+    <!--        LoginActivity       -->
+    <dimen name="login.button_height">57dp</dimen>
+    <dimen name="login.button_height_half">20dp</dimen>
+    <dimen name="login.title_size_text">48sp</dimen>
+    <dimen name="login.text_size_button">@dimen/text.default</dimen>
+    <dimen name="login.icon">16dp</dimen>
+
+
+    <!--        Profile Activity       -->
+    <dimen name="profile.height_avatar">215dp</dimen>
+
+    <!--Calls-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="border">1dp</dimen>
+    <dimen name="action_bar_height">71dp</dimen>
+    <dimen name="action_bar_width">71dp</dimen>
+    <dimen name="icon_width">52dp</dimen>
+    <dimen name="icon_height">52dp</dimen>
+    <dimen name="alert_bar_height">30dp</dimen>
+    <dimen name="alert_text">14sp</dimen>
+    <dimen name="preview_width">90dp</dimen>
+    <dimen name="preview_height">78dp</dimen>
+    <dimen name="preview_rightMargin">24dp</dimen>
+    <dimen name="preview_bottomMargin">75dp</dimen>
+    <dimen name="margin_login">74dp</dimen>
+    <dimen name="bottom_login">11dp</dimen>
+    <dimen name="info_login_icon">13dp</dimen>
+
+    <dimen name="button_radius">3dp</dimen>
+    <dimen name="elevation">3dp</dimen>
+    <dimen name="margin_fragmen_login">43dp</dimen>
+    <dimen name="margin_fragmen_login_icon">21dp</dimen>
+    <dimen name="profile.width_location">8dp</dimen>
+    <dimen name="profile.height_location">11dp</dimen>
+    <dimen name="profile.height_icon">15sp</dimen>
+    <dimen name="profile.icon_edit">19dp</dimen>
+    <dimen name="profile.width_change_avatar">66dp</dimen>
+    <dimen name="profile.height_change_avatar">42dp</dimen>
+    <dimen name="profile.photos_grid">159dp</dimen>
+    <dimen name="profile.photos_grid_icon">42dp</dimen>
+    <dimen name="button_dialog_height">48dp</dimen>
+    <dimen name="perfil_add_icon">42dp</dimen>
+    <dimen name="min_width_dialog">300dp</dimen>
+    <dimen name="size_button_height">48dp</dimen>
+    <dimen name="splash_icon_height">95dp</dimen>
+    <dimen name="splash_icon_width">88dp</dimen>
+    <dimen name="size_button_height_main">52.3dp</dimen>
+    <dimen name="radius_card">4dp</dimen>
+    <dimen name="viewSpacingPrimary">@dimen/spacing.xmd</dimen>
+    <dimen name="size_clock_subscription">88dp</dimen>
+    <dimen name="footer_chat">50dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_bold">fonts/Rubik-Black.ttf</string>
+    <string name="font_light">fonts/Rubik-Light.ttf</string>
+    <string name="font_medium">fonts/Rubik-Medium.ttf</string>
+    <string name="font_regular">fonts/Rubik-Regular.ttf</string>
+    <string name="font_semi_bold">fonts/Rubik-Bold.ttf</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sender_id">xxx</string>
+    <string name="client_id">123456</string>
+    <string name="client_secret">123456</string>
+
+    <string name="quickblox_app_id">xxx</string>
+    <string name="quickblox_auth_key">xxx</string>
+    <string name="quickblox_auth_secret">xxx</string>
+    <string name="quickblox_account_key">xxx</string>
+</resources>
