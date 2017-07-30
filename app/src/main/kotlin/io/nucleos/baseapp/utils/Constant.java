@@ -29,8 +29,8 @@ public interface Constant {
     }
 
     interface Preferences {
-        String APP = "bizupAppPreferences";
-        String SESSION = "bizupSessionPreferences";
+        String APP = "baseAppPreferences";
+        String SESSION = "baseAppSessionPreferences";
         String CACHE = "okhttp_cache";
     }
 
