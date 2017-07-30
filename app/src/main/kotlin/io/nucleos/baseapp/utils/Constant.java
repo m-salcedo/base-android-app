@@ -14,6 +14,7 @@ public interface Constant {
         String ACCESS_TOKEN = "access_token";
         String AUTHORIZATION = "Authorization";
         String JWT = "JWT ";
+        String BEARER = "Bearer ";
 
         String ID = "id";
 
