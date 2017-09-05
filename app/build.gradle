@@ -90,6 +90,7 @@ dependencies {
 
     // ---------- Kotlin ----------
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.anko:anko-common:0.9"
 
     // ---------- Dagger ----------
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
@@ -115,9 +116,8 @@ dependencies {
 
     // ---------- For Images ----------
     compile "com.squareup.picasso:picasso:$picasso_version"
-
-    // ---------- OpenTok ----------
-    compile "com.opentok.android:opentok-accelerator-core:1.0.10"
+    compile "com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0"
+    compile "com.soundcloud.android:android-crop:1.0.1@aar"
 
     // ---------- OneSignal ----------
     compile "com.onesignal:OneSignal:$onesignal_version"

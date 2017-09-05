@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="font_bold">fonts/Rubik-Black.ttf</string>
-    <string name="font_light">fonts/Rubik-Light.ttf</string>
-    <string name="font_medium">fonts/Rubik-Medium.ttf</string>
-    <string name="font_regular">fonts/Rubik-Regular.ttf</string>
-    <string name="font_semi_bold">fonts/Rubik-Bold.ttf</string>
+    <string name="font_black">fonts/Montserrat-Black.ttf</string>
+    <string name="font_bold">fonts/Montserrat-Bold.ttf</string>
+    <string name="font_extra_bold">fonts/Montserrat-ExtraBold.ttf</string>
+    <string name="font_extra_light">fonts/Montserrat-ExtraLight.ttf</string>
+    <string name="font_light">fonts/Montserrat-Light.ttf</string>
+    <string name="font_medium">fonts/Montserrat-Medium.ttf</string>
+    <string name="font_regular">fonts/Montserrat-Regular.ttf</string>
+    <string name="font_semi_bold">fonts/Montserrat-SemiBold.ttf</string>
+    <string name="font_thin">fonts/Montserrat-Thin.ttf</string>
 </resources>

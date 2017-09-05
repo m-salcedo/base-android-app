@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BaseApp</string>
+    <string name="permissions_denied_title">Permisos denegados</string>
+    <string name="alert_permissions_denied">Sin estos permisos la aplicación no funcionara correctamente.</string>
 </resources>

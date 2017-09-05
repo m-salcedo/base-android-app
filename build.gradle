@@ -54,7 +54,6 @@ allprojects {
     repositories {
         jcenter()
         maven { url 'https://maven.fabric.io/public' }
-        maven { url "http://tokbox.bintray.com/maven" }
         maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
     }
 }
