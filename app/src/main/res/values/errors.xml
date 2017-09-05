@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_unknown">Error desconocido</string>
+
+    <string name="error_internal_server">Error en el servidor</string>
+    <string name="error_connection_unavailable">Conexión no disponible</string>
+
+    <string name="error_select_payout_method">Debe seleccionar un método de pago</string>
+
+    <string name="field_required">Este campo es requerido</string>
+    <string name="error_required_country">El pais requerido</string>
+    <string name="error_required_email">El email es requerido</string>
+    <string name="error_required_password">La contraseña es requerida</string>
+    <string name="error_required_full_name">El nombre completo es requerido</string>
+    <string name="error_required_phone">El teléfono es requerido</string>
+    <string name="error_required_company_name">El nombre de la compañia es requerido</string>
+    <string name="error_required_address">La dirección es requerida</string>
+    <string name="error_required_document_id">El número de identidad es requerido</string>
+    <string name="error_required_profile_photo">La foto de perfil es requerida</string>
+    <string name="error_required_promotional_video">El video de presentación es requerido</string>
+    <string name="error_required_beneficiary_name">El nombre del beneficiario es requerido</string>
+    <string name="error_required_account_number">El número de cuenta es requerido</string>
+    <string name="error_required_swift">El swift es requerido</string>
+    <string name="error_required_pseudonym">El pseudónimo es requerido</string>
+
+    <string name="error_required_categories">Debes ofrecer al menos un servicio</string>
+    <string name="error_required_main_category">Debes tener una categoria principal</string>
+
+    <string name="error_min_length_name">El nombre debe tener al menos 5 caracteres</string>
+    <string name="error_min_length_company_name">El nombre de la compañia debe tener al menos 5 caracteres</string>
+    <string name="error_min_length_address">La dirección debe tener al menos 10 caracteres</string>
+    <string name="error_min_length_account_number">El número de cuenta debe tener al menos 10 caracteres</string>
+    <string name="error_min_length_swift">El swift debe tener al menos 4 caracteres</string>
+    <string name="error_min_length_pseudonym">El pseudónimo debe tener al menos 5 caracteres</string>
+    <string name="error_min_length_password">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="error_min_length_20">Debe tener al menos 20 caracteres</string>
+
+
+    <string name="error_invalid_email">Debe ser un correo electronico</string>
+    <string name="error_passwords_must_be_equals">Las contraseñas deben ser iguales</string>
+    <string name="error_uploading_video" >Problemas subiendo el video</string>
+    <string name="error_uploading_photo">Error subiendo la foto</string>
+
+</resources>

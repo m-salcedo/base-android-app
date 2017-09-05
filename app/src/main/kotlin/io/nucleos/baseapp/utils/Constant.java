@@ -6,7 +6,7 @@ package io.nucleos.baseapp.utils;
  */
 public interface Constant {
 
-    class LOCATION {
+    interface Location {
         public static final long INTERVAL = 60000;
     }
 
@@ -22,6 +22,7 @@ public interface Constant {
         String ME = "me";
         String SESSION = "session";
         String EVENT = "event";
+        String CROPPED = "cropped";
     }
 
     interface Models {

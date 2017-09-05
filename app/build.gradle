@@ -117,6 +117,7 @@ dependencies {
     // ---------- For Images ----------
     compile "com.squareup.picasso:picasso:$picasso_version"
     compile "com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0"
+    compile "com.soundcloud.android:android-crop:1.0.1@aar"
 
     // ---------- OneSignal ----------
     compile "com.onesignal:OneSignal:$onesignal_version"
